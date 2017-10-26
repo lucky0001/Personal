@@ -1,0 +1,259 @@
+body{
+	margin:0;
+	padding:0;
+	font-family: "微软雅黑";
+}
+#all{background-color: #17404c;}
+header{
+	background-image: url(images/background.jpg);
+	background-size: cover;
+	width:100%;
+}
+ul li{
+	list-style: none;
+	display: inline-flex;
+}
+a{text-decoration: none;}
+.top ul{
+	float:right;
+	margin-right: 30px;
+	margin-top: -2px;
+}
+.top{
+	height:55px;
+}
+.top ul li{
+	width:120px;
+	height:70px;
+	line-height: 70px;
+	font-size: 20px;
+	color:white;
+}
+.top ul li a{
+	margin:auto;
+	color:white;
+}
+.top ul li:hover{
+	background-color: rgba(19,61,73,0.7);
+}
+.center{
+	width:500px;
+	margin:auto;
+	text-align: center;
+	color:white;
+	margin-top: 150px;
+	padding-bottom: 150px;
+}
+.center .a{
+	width:110px;
+	height:110px;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	border:4px solid white;
+}
+.center p{
+	font-size: 36px;
+}
+article{ 
+	width:78%;
+	margin:auto;
+}
+h3{
+	color:#9d9d9d;
+	font-weight: normal;
+	font-size: 25px;
+	letter-spacing:12px;
+}
+h1{
+	font-size: 45px;
+	text-align: center;
+}
+
+
+
+
+/*休息驿站效果*/
+@font-face {
+	font-family: NotoSans;
+	src: url("fonts/NotoSans-Regular.ttf");
+}
+*,:before,:after {
+	-o-box-sizing:content-box;
+	-ms-box-sizing:content-box;
+	box-sizing:border-box;
+}
+.effect-jazz img {
+	border:0;
+	max-width:100%;
+	height:auto;
+}
+.ul {
+	list-style: none;
+	margin:0;
+	padding:0;
+	overflow: hidden;
+}
+
+main {
+	position: relative;
+	padding:2rem 3rem 0;
+	min-height:50rem;
+	overflow: visible;
+}
+
+
+@media only screen and (min-width:1281px) and (max-width:1680px) {
+	article {
+	font-size:14px
+}
+}
+
+
+figure {
+	position: relative;
+float: left;
+overflow: hidden;
+width: 100%;
+height: 100%;
+background: #3085a3;
+text-align: center;
+cursor: pointer;
+margin: 0;
+}
+
+figure img {
+	position: relative;
+	display: block;
+}
+
+figure figcaption {
+	padding: 2em;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+figure figcaption::before,
+figure figcaption::after {
+	pointer-events: none;
+}
+
+figure figcaption,
+figure figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+figure figcaption > a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+
+figure h2 {
+	word-spacing: -0.25em;
+	font-size: 1.7rem;
+	font-weight: 800;
+}
+
+figure h2 span {
+	font-weight: 200;
+}
+
+figure.effect-jazz{
+	background: #3C3C3C;
+}
+
+figure.effect-jazz figcaption::after,
+figure.effect-jazz img,
+figure.effect-jazz p {
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect-jazz figcaption {
+	padding: 2em 1em;
+}
+
+figure.effect-jazz figcaption::after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	content: '';
+	opacity: 0;
+	-webkit-transform: rotate3d(0,0,1,45deg) scale3d(1,0,1);
+	transform: rotate3d(0,0,1,45deg) scale3d(1,0,1);
+	-webkit-transform-origin: 50% 50%;
+	-ms-transform-origin: 50% 50%;
+	transform-origin: 50% 50%;
+}
+
+figure.effect-jazz p,
+figure.effect-jazz h2{
+	padding: 0.5em 2em;
+	text-transform: none;
+	opacity: 0;
+	-webkit-transform: scale3d(0.8,0.8,1);
+	transform: scale3d(0.8,0.8,1);
+}
+
+figure.effect-jazz h2 {
+	letter-spacing: 2px;
+	padding-top: 12%;
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+}
+
+figure.effect-jazz h2 span{
+	letter-spacing: 0;
+	font-size:1rem;
+}
+
+figure.effect-jazz:hover img {
+	opacity: 0.2;
+	-webkit-transform: scale3d(1.05,1.05,1);
+	transform: scale3d(1.05,1.05,1);
+}
+
+figure.effect-jazz:hover figcaption::after {
+	opacity: 1;
+	-webkit-transform: rotate3d(0,0,1,45deg) scale3d(1,1,1);
+	transform: rotate3d(0,0,1,45deg) scale3d(1,1,1);
+}
+
+figure.effect-jazz:hover h2,
+figure.effect-jazz:hover p {
+	opacity: 1;
+	-webkit-transform: scale3d(1,1,1);
+	transform: scale3d(1,1,1);
+}
+.items {
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.items li {
+position: relative;
+width: 45%;
+height: auto;
+margin: 1%;
+float: left;
+}
+/*休息驿站效果*/
+
+
+footer{
+	height:100px;
+	background-color: #12343f;
+}
